@@ -1,0 +1,12 @@
+<% include header %>
+
+  <h1><%-title %></h1>
+  <p>Welcome to <%-title %></p>
+  
+  <p>Here are some links:
+  <% links.forEach(function(links){ %>
+  <a href=<%= links.url %>><%= links.title %></a>, <%= links.text %>
+  <% }); %>
+  </p>
+
+<% include footer %>
